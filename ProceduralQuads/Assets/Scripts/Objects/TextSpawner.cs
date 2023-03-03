@@ -9,7 +9,6 @@ public class TextSpawner : MonoBehaviour
     public float YOffset;
     public Gradient Gradient;
     public GameObject TextPrefab;
-    public Transform CanvasWorldSpace;
     public List<GameObject> generatedObjects;
     void Start()
     {
@@ -17,7 +16,8 @@ public class TextSpawner : MonoBehaviour
     }
     public void GenerateNewText (Vector3 spawnPos)
     {
-        GameObject newObject = Instantiate(TextPrefab, spawnPos + new Vector3(0, YOffset,0), Quaternion.identity, CanvasWorldSpace);
+        Transform canvasWorldSpace = GameObject.FindGameObjectWithTag("WorldCanvas").transform;
+        GameObject newObject = Instantiate(TextPrefab, spawnPos + new Vector3(0, YOffset,0), Quaternion.identity, canvasWorldSpace);
         newObject.SetActive(true);
         generatedObjects.Add(newObject);
         StartCoroutine(DestroyObjectRoutine(newObject,Delay));
