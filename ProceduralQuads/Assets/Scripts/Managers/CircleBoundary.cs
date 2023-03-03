@@ -4,8 +4,14 @@ using System.Collections.Generic;
 public class CircleBoundary : MonoBehaviour
 {
     public float radius = 5.0f; // radius of the circle boundary
-    public List<Transform> objects = new List<Transform>(); // list of objects to be confined within the circle boundary
+    private List<Transform> objects = new List<Transform>(); // list of objects to be confined within the circle boundary
 
+    public void AddTransform (Transform newObj)
+    {
+        if (objects == null)
+            objects = new List<Transform>();
+        objects.Add(newObj);
+    }
     // Update is called once per frame
     void Update()
     {

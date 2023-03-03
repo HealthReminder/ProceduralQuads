@@ -11,7 +11,7 @@ public class InstantiateSpiral : MonoBehaviour
     public float spiralAnglePerObject; // the angle between each object in the spiral
     public float objectSeparation; // the distance between each object in the spiral
 
-    void Start()
+    public void Instantiate()
     {
         for (int i = 0; i < numObjectsToSpawn; i++)
         {
@@ -22,6 +22,7 @@ public class InstantiateSpiral : MonoBehaviour
 
             Vector3 spawnPos = new Vector3(x, y, z) + transform.position;
             GameObject spawnedObject = Instantiate(prefabToSpawn, spawnPos, Quaternion.identity, transform);
+            spawnedObject.SetActive(true);
         }
     }
 }
