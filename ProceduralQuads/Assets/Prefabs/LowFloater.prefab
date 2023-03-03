@@ -242,8 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RadiusSpawn: 50
-  Yrange: {x: 0, y: 20}
-  SizeRange: {x: 2, y: 4}
+  Yrange: {x: 0, y: 40}
+  SizeRange: {x: 1.25, y: 2.5}
 --- !u!114 &5636613819040660860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yVariation: 5
-  speed: 0.1
+  speed: 0.02
 --- !u!114 &3457968849399092792
 MonoBehaviour:
   m_ObjectHideFlags: 0

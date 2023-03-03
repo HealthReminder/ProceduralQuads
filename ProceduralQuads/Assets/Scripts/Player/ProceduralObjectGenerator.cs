@@ -22,6 +22,7 @@ public class ProceduralObjectGenerator : MonoBehaviour
         newObject.AddComponent<MeshRenderer>();
         newObject.AddComponent<MeshFilter>();
         newObject.AddComponent<MeshCollider>();
+        newObject.GetComponent<MeshCollider>().convex = true;
 
         // Assign the material to the object's mesh renderer
         newObject.GetComponent<MeshRenderer>().material = propBlockMaterial;
