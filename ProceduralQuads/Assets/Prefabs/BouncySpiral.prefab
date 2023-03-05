@@ -93,12 +93,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20838dd30208caf4cb21b16eb811b4fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 1937750940852878383}
-  numObjectsToSpawn: 25
-  radius: 3.5
-  height: 10
-  spiralAnglePerObject: 2
-  objectSeparation: 3
+  SpiralPivot: {fileID: 1956101230414848083}
+  Prefab: {fileID: 1937750940852878383}
+  ObjectCount: 12
+  Radius: 5
+  Height: 15
+  SpiralAnglePerObject: 1
+  ObjectSeparation: 5
 --- !u!114 &7434847776352954814
 MonoBehaviour:
   m_ObjectHideFlags: 0

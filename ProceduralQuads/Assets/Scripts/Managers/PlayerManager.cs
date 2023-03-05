@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class PlayerManager : MonoBehaviour
     private Vector3[] currentPlane;
     void Update()
     {
+        //Rse
+        if (Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         if (Input.GetMouseButtonDown(0))
         {
             if (FourPointsController.PointCount < 4)
