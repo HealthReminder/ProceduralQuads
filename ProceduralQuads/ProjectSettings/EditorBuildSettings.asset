@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test/level3.unity
     guid: 8fde857d2a06fd54e896c154ffb55e15
+  - enabled: 1
+    path: Assets/Scenes/SpireScene.unity
+    guid: cc48d41c6db294444befbd2fe5a4e389
   m_configObjects: {}

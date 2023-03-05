@@ -1,4 +1,5 @@
-// Some stupid rigidbody based movement by Dani
+// A player movement script found on Dani's github: https://github.com/DaniDevy/FPS_Movement_Rigidbody/blob/master/PlayerMovement.cs
+// Some awesome rigidbody based movement by Dani
 
 using System;
 using UnityEngine;
