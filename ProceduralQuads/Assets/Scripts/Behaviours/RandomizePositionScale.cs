@@ -13,10 +13,12 @@ public class RandomizePositionScale : MonoBehaviour
 
 
     internal bool _isTouched = false;
-
-    public void Randomize()
+    private void Awake()
     {
         _originalScale = transform.localScale;
+    }
+    public void Randomize()
+    {
         RandomizePosition();
         RandomizeSize();
     }

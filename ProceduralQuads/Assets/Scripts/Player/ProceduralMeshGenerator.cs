@@ -4,8 +4,14 @@ using UnityEngine;
 public class ProceduralMeshGenerator : MonoBehaviour
 {
     public Material propBlockMaterial; // Material to use for the object's texture
+    public GameObject QuadPrefab; //Can be an empty object
     private List<GameObject> generatedObjects = new List<GameObject>(); // List to store generated objects
     public Gradient PossibleColorGradient;
+    private Transform pivot;
+    private void Awake()
+    {
+        pivot = new GameObject("ProceduralMeshes").transform;
+    }
 
     // Method to generate the object using four points in world space
     public void Generate(Vector3[] points)
@@ -18,15 +24,20 @@ public class ProceduralMeshGenerator : MonoBehaviour
         }
 
         // Create a new game object and add a mesh renderer and mesh filter component to it
-        GameObject newObject = new GameObject();
+        GameObject newObject = Instantiate(QuadPrefab, pivot);
+        newObject.layer = 0;
         newObject.AddComponent<MeshRenderer>();
         newObject.AddComponent<MeshFilter>();
         newObject.AddComponent<MeshCollider>();
         newObject.GetComponent<MeshCollider>().convex = true;
 
+
         // Assign the material to the object's mesh renderer
         newObject.GetComponent<MeshRenderer>().material = propBlockMaterial;
         newObject.GetComponent<MeshRenderer>().sharedMaterial = propBlockMaterial;
+        newObject.GetComponent<MeshRenderer>().shadowCastingMode = (UnityEngine.Rendering.ShadowCastingMode)LightShadowCasterMode.Default;
+        newObject.GetComponent<MeshRenderer>().receiveShadows = true;
+
 
         // Create a new mesh and assign the vertices, triangles, normals, and UV mapping to it
         Mesh newMesh = new Mesh();
@@ -37,8 +48,12 @@ public class ProceduralMeshGenerator : MonoBehaviour
         // Update the mesh collider
         newObject.GetComponent<MeshCollider>().sharedMesh = newMesh;
 
+
         //Change color of the object
         ColorGeneratedObject(newObject.GetComponent<MeshRenderer>(), PossibleColorGradient.Evaluate(Random.Range(0.0f, 1.0f)));
+
+        //Turn object active
+        newObject.SetActive(true);
 
         // Add the generated object to the list
         generatedObjects.Add(newObject);

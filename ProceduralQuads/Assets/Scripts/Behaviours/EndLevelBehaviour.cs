@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EndLevelBehaviour : MonoBehaviour
 {
     public string sceneName = "Default";
-    public ScreenTransition ScreenTransition;
+    public ScreenFade ScreenTransition;
     public AudioSource WinAudio;
     public void GoToNextLevel()
     {
