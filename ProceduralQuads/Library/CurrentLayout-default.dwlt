@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 811, y: 492}
   m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 57
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
   - {fileID: 19}
   - {fileID: 20}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_MinSize: {x: 535, y: 271}
   m_MaxSize: {x: 18005, y: 10021}
   vertical: 0
-  controlID: 73
+  controlID: 64
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -486,9 +486,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -30.566887, y: 173.4689, z: -150.977}
+    m_Target: {x: 18.647795, y: 90.97724, z: 98.26834}
     speed: 2
-    m_Value: {x: -30.566887, y: 173.4689, z: -150.977}
+    m_Value: {x: 18.647795, y: 90.97724, z: 98.26834}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 2
@@ -535,13 +535,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.021607509, y: -0.7553504, z: 0.024934765, w: -0.65450376}
+    m_Target: {x: 0.011563497, y: 0.7659549, z: 0.013793077, w: -0.6426738}
     speed: 2
-    m_Value: {x: -0.02348896, y: -0.7572253, z: 0.02727108, w: -0.65216136}
+    m_Value: {x: 0.011563262, y: 0.7659394, z: 0.013792798, w: -0.64266074}
   m_Size:
-    m_Target: 188.59894
+    m_Target: 5.9488034
     speed: 2
-    m_Value: 197.4858
+    m_Value: 5.9488034
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -586,13 +586,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 510
+    x: 907
     y: 73
-    width: 1017
+    width: 649
     height: 569
   m_ViewDataDictionary: {fileID: 0}
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 204}
+  m_PosRight: {x: 0, y: 0}
   m_Scope: 1
   m_SplitterFlex: 0.2
 --- !u!114 &18
@@ -1586,21 +1586,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Managers
+    - Assets/Scripts/Objects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 75
   m_LastFolders:
-  - Assets/Scripts/Managers
+  - Assets/Scripts/Objects
   m_LastFoldersGridSize: 75
   m_LastProjectPath: B:\Projetos\2023\01\AloneProceduralMeshes\ProceduralQuads\ProceduralQuads
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a03f0000
-    m_LastClickedID: 16288
+    m_SelectedIDs: a83f0000
+    m_LastClickedID: 16296
     m_ExpandedIDs: 000000008e3f0000903f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1712,7 +1712,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1220
+  m_LastSelectedObjectID: -5486
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1766,23 +1766,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 143e0000
-      m_LastClickedID: 15892
-      m_ExpandedIDs: 3cfbffff52fbffff143e0000
+      m_SelectedIDs: 92eaffff
+      m_LastClickedID: -5486
+      m_ExpandedIDs: 7ceaffff92eaffffa8eeffffcaf2ffffd8f5ffff52fbffffa63d0000b63d0000203e0000a23e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: 'Text (TMP) '
+        m_OriginalName: 'Text (TMP) '
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -73340
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 13}
       m_SearchString: 
@@ -1849,7 +1849,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 578
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0

@@ -13,7 +13,7 @@ public class Planet : MonoBehaviour
     {
         foreach (Rigidbody rigidbody in rigidbodiesInfluence)
         {
-            if (rigidbody.CompareTag("Player") && !IsGrounded(rigidbody))
+            if (!IsGrounded(rigidbody) && rigidbody.useGravity)
             {
                 float distance = Vector3.Distance(transform.position, rigidbody.position);
                 if (distance <= radius)
