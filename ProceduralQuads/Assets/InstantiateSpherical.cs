@@ -7,11 +7,13 @@ public class InstantiateSpherical : MonoBehaviour
     public float radius;
     public float raycastLength = 3000f;
 
-    private void Instantiate()
+    public void Instantiate()
     {
         for (int i = 0; i < numberOfObjects; i++)
         {
             GameObject instance = Instantiate(prefab, transform.position, Quaternion.identity);
+            instance.SetActive(true);
+            instance.transform.parent = transform;
             RaycastHit hit = new RaycastHit();
             bool hasHitSomething = false;
             while (!hasHitSomething)

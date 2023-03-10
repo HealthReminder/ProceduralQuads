@@ -14,15 +14,19 @@ public class RigidbodyEvent : UnityEvent<Rigidbody>
 public class OnCollisionEvent : MonoBehaviour
 {
     public float MinimumImpactMagnitude = 2;
-    public List<VectorEvent> Events;
+    public List<UnityEvent> Events;
+    public List<VectorEvent> VectorEvents;
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.relativeVelocity.magnitude > MinimumImpactMagnitude)
         {
             Debug.Log(collision.relativeVelocity.magnitude);
-            foreach (VectorEvent e in Events)
+            foreach (VectorEvent e in VectorEvents)
                 e.Invoke(collision.GetContact(0).point);
+            foreach (UnityEvent e in Events)
+                e.Invoke();
+
         }
     }
 }

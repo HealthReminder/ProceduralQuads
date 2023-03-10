@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
-    public PlayerMovement Movement;
+    //public PlayerMovement Movement;
     public ProceduralMeshGenerator ProceduralObjectGenerator;
     public FourPointsController FourPointsController;
     public RectangleDrawer meshPreview;

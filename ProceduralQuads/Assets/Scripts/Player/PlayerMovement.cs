@@ -84,12 +84,12 @@ public class PlayerMovement : MonoBehaviour
         crouching = Input.GetKey(KeyCode.LeftControl);
 
         //Crouching
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-            StartCrouch();
-        if (Input.GetKeyUp(KeyCode.LeftControl))
-            StopCrouch();
+        //if (Input.GetKeyDown(KeyCode.LeftControl))
+        //    StartCrouch();
+        //if (Input.GetKeyUp(KeyCode.LeftControl))
+        //    StopCrouch();
     }
-
+/*
     private void StartCrouch()
     {
         transform.localScale = crouchScale;
@@ -107,19 +107,16 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.localScale = playerScale;
         transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
-    }
+    }*/
 
     private void Movement()
     {
-        //Extra gravity
-        rb.AddForce(Vector3.down * Time.deltaTime * 10);
-
         //Find actual velocity relative to where player is looking
         Vector2 mag = FindVelRelativeToLook();
         float xMag = mag.x, yMag = mag.y;
 
         //Counteract sliding and sloppy movement
-        CounterMovement(x, y, mag);
+        //CounterMovement(x, y, mag);
 
         //If holding jump && ready to jump, then jump
         if (readyToJump && jumping && CanJump) Jump();
@@ -130,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
         //If sliding down a ramp, add force down so player stays grounded and also builds speed
         if (crouching && grounded && readyToJump)
         {
-            rb.AddForce(Vector3.down * Time.deltaTime * 3000);
+            rb.AddForce(orientation.up *-1 * Time.deltaTime * 3000);
             return;
         }
 
@@ -165,7 +162,7 @@ public class PlayerMovement : MonoBehaviour
             readyToJump = false;
 
             //Add jump forces
-            rb.AddForce(Vector2.up * jumpForce * 1.5f);
+            rb.AddForce(orientation.up * jumpForce * 1.5f);
             rb.AddForce(normalVector * jumpForce * 0.5f);
 
             //If jumping while falling, reset y velocity.
@@ -217,11 +214,11 @@ public class PlayerMovement : MonoBehaviour
         //Counter movement
         if (Math.Abs(mag.x) > threshold && Math.Abs(x) < 0.05f || (mag.x < -threshold && x > 0) || (mag.x > threshold && x < 0))
         {
-            rb.AddForce(moveSpeed * orientation.transform.right * Time.deltaTime * -mag.x * counterMovement);
+            rb.AddForce(moveSpeed * orientation.right * Time.deltaTime * -mag.x * counterMovement);
         }
         if (Math.Abs(mag.y) > threshold && Math.Abs(y) < 0.05f || (mag.y < -threshold && y > 0) || (mag.y > threshold && y < 0))
         {
-            rb.AddForce(moveSpeed * orientation.transform.forward * Time.deltaTime * -mag.y * counterMovement);
+            rb.AddForce(moveSpeed * orientation.forward * Time.deltaTime * -mag.y * counterMovement);
         }
 
         //Limit diagonal running. This will also cause a full stop if sliding fast and un-crouching, so not optimal.
