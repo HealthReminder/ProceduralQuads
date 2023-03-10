@@ -1,11 +1,13 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class OnTriggerEnterEvent : MonoBehaviour
 {
     public bool IsOnlyTriggeredByPlayer = false;
-    public List<VectorEvent> VectorEvents;
+    public bool isOnlyTriggeredOnce = false;
+    public List<UnityEvent> RegularEvents;
+    public List<VectorEvent> VectorEvents; 
     public List<RigidbodyEvent> RigidbodyEvents;
     private void OnTriggerEnter(Collider other)
     {
@@ -17,10 +19,15 @@ public class OnTriggerEnterEvent : MonoBehaviour
         {
             InvokeAll(other);
         }
+        
                 
     }
     private void InvokeAll(Collider col)
     {
+        foreach (UnityEvent ev in RegularEvents)
+        {
+            ev.Invoke();
+        }
         foreach (VectorEvent ev in VectorEvents)
         {
             ev.Invoke(col.ClosestPoint(transform.position));
@@ -31,6 +38,8 @@ public class OnTriggerEnterEvent : MonoBehaviour
             if (rb != null)
                 ev.Invoke(rb);
         }
+        if (isOnlyTriggeredOnce == true)
+            Destroy(gameObject);
     }
 
 }
