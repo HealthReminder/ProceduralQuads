@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4523424751926498362}
   - component: {fileID: 4523424751926498363}
   - component: {fileID: 4523424751926498340}
+  - component: {fileID: 2896007690674283177}
   m_Layer: 0
   m_Name: Renderer
   m_TagString: Untagged
@@ -96,6 +97,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2896007690674283177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4523424751926498342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de73ad387f57b344884f98e4a8c40cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4523424752434096483
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +121,7 @@ GameObject:
   - component: {fileID: 4523424752434096487}
   - component: {fileID: 4523424752434096480}
   - component: {fileID: 4523424752434096481}
+  - component: {fileID: 1541389725602315656}
   m_Layer: 0
   m_Name: Renderer
   m_TagString: Untagged
@@ -192,6 +206,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1541389725602315656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4523424752434096483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de73ad387f57b344884f98e4a8c40cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4523424753175271382
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +228,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4523424753175271381}
   - component: {fileID: 5636613819040660860}
-  - component: {fileID: 4523424753175271380}
   - component: {fileID: 4888843592532395565}
   - component: {fileID: 3122544706870245106}
   - component: {fileID: 3457968849399092792}
@@ -274,20 +299,6 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
---- !u!114 &4523424753175271380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4523424753175271382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14888134cb159ca4e946e35e3f605bb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yVariation: 5
-  speed: 0.02
 --- !u!114 &4888843592532395565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,7 +395,7 @@ MonoBehaviour:
   OnUpdateEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4523424753175271380}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FloatVertically, Assembly-CSharp
         m_MethodName: Float
         m_Mode: 1
