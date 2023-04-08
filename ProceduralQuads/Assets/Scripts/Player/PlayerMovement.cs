@@ -6,20 +6,24 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // States
+    public bool CanJump = true;
+    public bool CanLook = true;
+    public bool CanMove = true;
 
-    //Assingables
+    // Assingables
     public Transform playerCam;
     public Transform orientation;
 
-    //Other
-    private Rigidbody rb;
+    // Other
+    private Rigidbody rb;   
 
-    //Rotation and look
+    // Rotation and look
     private float xRotation;
     private float sensitivity = 50f;
     private float sensMultiplier = 1f;
 
-    //Movement
+    // Movement
     public float moveSpeed = 4500;
     public float maxSpeed = 20;
     public bool grounded;
@@ -36,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
     public float slideCounterMovement = 0.2f;
 
     //Jumping
-    public bool CanJump = true;
     private bool readyToJump = true;
     private float jumpCooldown = 0.25f;
     public float jumpForce = 550f;
@@ -64,13 +67,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Movement();
+        if(CanMove)
+            Movement();
     }
 
     private void Update()
     {
         MyInput();
-        Look();
+        if(CanLook)
+            Look();
     }
 
     /// <summary>
@@ -83,31 +88,7 @@ public class PlayerMovement : MonoBehaviour
         jumping = Input.GetButton("Jump");
         crouching = Input.GetKey(KeyCode.LeftControl);
 
-        //Crouching
-        //if (Input.GetKeyDown(KeyCode.LeftControl))
-        //    StartCrouch();
-        //if (Input.GetKeyUp(KeyCode.LeftControl))
-        //    StopCrouch();
     }
-/*
-    private void StartCrouch()
-    {
-        transform.localScale = crouchScale;
-        transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-        if (rb.velocity.magnitude > 0.5f)
-        {
-            if (grounded)
-            {
-                rb.AddForce(orientation.transform.forward * slideForce);
-            }
-        }
-    }
-
-    private void StopCrouch()
-    {
-        transform.localScale = playerScale;
-        transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
-    }*/
 
     private void Movement()
     {

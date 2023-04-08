@@ -4,20 +4,20 @@ using UnityEngine.Events;
 
 public class OnTriggerEnterEvent : MonoBehaviour
 {
-    public bool IsOnlyTriggeredByPlayer = false;
+    public string TriggerTag;
     public bool isOnlyTriggeredOnce = false;
     public List<UnityEvent> RegularEvents;
     public List<VectorEvent> VectorEvents; 
     public List<RigidbodyEvent> RigidbodyEvents;
     private void OnTriggerEnter(Collider other)
     {
-        if (IsOnlyTriggeredByPlayer)
+        if (TriggerTag == string.Empty)
         {
-            if (other.tag == "Player")
                 InvokeAll(other);
         } else
         {
-            InvokeAll(other);
+            if (other.tag == TriggerTag)
+                InvokeAll(other);
         }
         
                 

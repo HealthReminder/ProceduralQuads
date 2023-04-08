@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Test/PlanetScene.unity
+- path: Assets/Scenes/YouDontExist.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
