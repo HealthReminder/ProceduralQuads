@@ -7,9 +7,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // States
-    public bool CanJump = true;
-    public bool CanLook = true;
-    public bool CanMove = true;
+    public bool CanJump { set => _canJump = value; }
+    public bool CanLook { set => _canLook = value; }
+    public bool CanMove { set => _canMove = value; }
+
+    [SerializeField] private bool _canJump = true;
+    [SerializeField] private bool _canLook = true;
+    [SerializeField] private bool _canMove = true;
+
 
     // Assingables
     public Transform playerCam;
@@ -67,14 +72,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(CanMove)
+        if(_canMove)
             Movement();
     }
 
     private void Update()
     {
         MyInput();
-        if(CanLook)
+        if(_canLook)
             Look();
     }
 
@@ -100,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
         //CounterMovement(x, y, mag);
 
         //If holding jump && ready to jump, then jump
-        if (readyToJump && jumping && CanJump) Jump();
+        if (readyToJump && jumping && _canJump) Jump();
 
         //Set max speed
         float maxSpeed = this.maxSpeed;
