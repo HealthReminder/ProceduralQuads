@@ -6,43 +6,44 @@ using UnityEngine.SceneManagement;
 public class ProcPlaneManager : MonoBehaviour
 {
     //public PlayerMovement Movement;
-    public bool CanPlacePoints;
-    public ProceduralMeshGenerator ProceduralObjectGenerator;
-    public FourPointsController FourPointsController;
-    public RectangleDrawer meshPreview;
-    private Vector3[] currentPlane;
+    [SerializeField] private bool _canPlacePoints;
+    public bool CanPlacePoints { set => _canPlacePoints = value; }
+    [SerializeField] private ProceduralMeshGenerator _proceduralObjectGenerator;
+    [SerializeField] private FourPointsController _fourPointsController;
+    [SerializeField] private RectangleDrawer _meshPreview;
+    private Vector3[] _currentPlane;
     void Update()
     {
         //Rse
         if (Input.GetKeyDown(KeyCode.R))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        if (CanPlacePoints)
+        if (_canPlacePoints)
             if (Input.GetMouseButtonDown(0))
             {
-                if (FourPointsController.PointCount < 4)
+                if (_fourPointsController.PointCount < 4)
                 {
-                    FourPointsController.PlacePoint();
+                    _fourPointsController.PlacePoint();
                     //Erase the preview when starting a new mesh
-                    if (FourPointsController.PointCount == 1)
-                        meshPreview.Erase();
+                    if (_fourPointsController.PointCount == 1)
+                        _meshPreview.Erase();
                     //When finished placing the four points, draw the preview lines
-                    if (FourPointsController.PointCount == 4)
+                    if (_fourPointsController.PointCount == 4)
                     {
-                        currentPlane = FourPointsController.GetPoints();
-                        meshPreview.Draw(currentPlane);
+                        _currentPlane = _fourPointsController.GetPoints();
+                        _meshPreview.Draw(_currentPlane);
                     }
                 }  //If there is a plane, generate it
-                else if (currentPlane != null)
+                else if (_currentPlane != null)
                 {
-                    ProceduralObjectGenerator.Generate(FourPointsController.GetPoints());
-                    FourPointsController.ResetPoints();
-                    currentPlane = null;
+                    _proceduralObjectGenerator.Generate(_fourPointsController.GetPoints());
+                    _fourPointsController.ResetPoints();
+                    _currentPlane = null;
                 }
             }
             else if (Input.GetMouseButtonDown(1))
             {
-                FourPointsController.ResetPoints();
-                meshPreview.Erase();
+                _fourPointsController.ResetPoints();
+                _meshPreview.Erase();
             }
     }
 }

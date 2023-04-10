@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 public class EventSequence : MonoBehaviour
 {
+
+    public bool IsReady { set => _isReady = value; }
+    [SerializeField] private bool _isReady = true;   // If true initiate the event cascade
     [System.Serializable]   public struct TimedEvent
     {
         public float DelayBefore;
@@ -12,7 +15,6 @@ public class EventSequence : MonoBehaviour
         public float DelayAfter;
     }
     [SerializeField] private TimedEvent[] _timedEvents;
-    private bool _isReady = true;   // If true initiate the event cascade
     private void Update()
     {
         if (_isReady)
