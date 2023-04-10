@@ -19,6 +19,7 @@ public class FourPointsController : MonoBehaviour
         {
             GameObject pointObject = Instantiate(pointPrefab, new Vector3(0, -100, 0), Quaternion.identity);
             pointObjects[i] = pointObject;
+            pointObject.SetActive(false);
         }
     }
     public void PlacePoint()
@@ -35,7 +36,7 @@ public class FourPointsController : MonoBehaviour
 
                     // move the corresponding point object to the new point
                     pointObjects[PointCount - 1].transform.position = point;
-
+                pointObjects[PointCount - 1].SetActive(true);
                 }
             }
             else

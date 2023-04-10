@@ -14,7 +14,7 @@ public class ScreenFade : MonoBehaviour
         fadeImage = GetComponentInChildren<Image>();
 
         // Set the image color to white
-        fadeImage.color = Color.white;
+        fadeImage.color = Color.black;
 
         // Start fading the image in
         FadeIn();
