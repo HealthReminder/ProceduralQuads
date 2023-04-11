@@ -6,7 +6,8 @@ using UnityEngine;
 public class LookAtSmooth : MonoBehaviour
 {
     public float LookSpeed = 0.1f; // Interval at which to update the object's look direction
-    public bool IsLooking { get; set; }
+    public bool IsLooking { set => _isLooking = value; }
+    [SerializeField] private bool _isLooking = false;
     [SerializeField] private Transform _lookingAt; // Reference to the transform being looked at
 
     private void Start()
@@ -19,7 +20,7 @@ public class LookAtSmooth : MonoBehaviour
     void Update()
     {
         // Check if it's time to update the object's look direction
-        if (IsLooking)
+        if (_isLooking)
         {
             Quaternion targetRotation = Quaternion.LookRotation(_lookingAt.position - transform.position);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, LookSpeed * Time.deltaTime);
