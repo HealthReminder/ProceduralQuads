@@ -1234,12 +1234,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271740052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.44, z: 3.62}
-  m_LocalScale: {x: 1.3308825, y: 14.212922, z: 1.4457567}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.3861482, z: 0.010790508}
+  m_LocalScale: {x: 0.8013529, y: 13.518233, z: 0.87052107}
   m_Children: []
-  m_Father: {fileID: 1184714952}
-  m_RootOrder: 1
+  m_Father: {fileID: 770270028}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &271740054
 MonoBehaviour:
@@ -1262,6 +1262,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: EventSequence, Assembly-CSharp
         m_MethodName: set_IsReady
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 770270030}
+        m_TargetAssemblyTypeName: RandomizeColor, Assembly-CSharp
+        m_MethodName: Randomize
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3943,6 +3955,7 @@ GameObject:
   - component: {fileID: 770270026}
   - component: {fileID: 770270025}
   - component: {fileID: 770270029}
+  - component: {fileID: 770270030}
   m_Layer: 0
   m_Name: Platform 2
   m_TagString: Untagged
@@ -4023,7 +4036,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.21, z: 38.3}
   m_LocalScale: {x: 18, y: 0.7, z: 18}
-  m_Children: []
+  m_Children:
+  - {fileID: 271740053}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4084,6 +4098,49 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.75
+--- !u!114 &770270030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770270024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7304b50ece4d91840af9180465f6ed0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Renderers:
+  - {fileID: 770270026}
+  PossibleColors:
+    serializedVersion: 2
+    key0: {r: 0.66480595, g: 1, b: 0.4481132, a: 1}
+    key1: {r: 0.66480595, g: 1, b: 0.4481132, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
 --- !u!1001 &774440977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5155,7 +5212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854297306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.592285, y: -172, z: 188}
+  m_LocalPosition: {x: -4.592285, y: -197, z: 188}
   m_LocalScale: {x: 1265.3279, y: 119.34575, z: 1265.3279}
   m_Children:
   - {fileID: 1789548651}
@@ -6498,7 +6555,6 @@ Transform:
   m_LocalScale: {x: 10.838185, y: 0.6657859, z: 10.838185}
   m_Children:
   - {fileID: 1758261246}
-  - {fileID: 271740053}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7559,6 +7615,100 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1608551317, guid: 2c32ff8f7d7f6d44499c853dc643e641, type: 3}
   m_PrefabInstance: {fileID: 787330828}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1402829404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402829405}
+  - component: {fileID: 1402829407}
+  - component: {fileID: 1402829406}
+  - component: {fileID: 1402829408}
+  m_Layer: 0
+  m_Name: EndLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1402829405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402829404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -38.8, y: -163, z: 69.1}
+  m_LocalScale: {x: 414.20187, y: 80.5167, z: 414.20187}
+  m_Children: []
+  m_Father: {fileID: 1923160364}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402829406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402829404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532dcf51fe8278a47a24f1a98ee6c632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneName: ThirdAct
+--- !u!65 &1402829407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402829404}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1402829408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402829404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1501a9a439832df4cb7b4736f37cd216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerTag: Player
+  isOnlyTriggeredOnce: 0
+  RegularEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1402829406}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  VectorEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  RigidbodyEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1423804102
 GameObject:
   m_ObjectHideFlags: 0
@@ -9642,6 +9792,7 @@ Transform:
   m_Children:
   - {fileID: 154042077}
   - {fileID: 1112076406}
+  - {fileID: 1402829405}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

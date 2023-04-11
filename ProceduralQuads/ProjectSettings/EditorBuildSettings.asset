@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroEye.unity
     guid: ac32893af5612ea40ad1df7f94f065c3
+  - enabled: 1
+    path: Assets/Scenes/ThirdAct.unity
+    guid: f289f1a7096dea547a6b2ab8c735572e
   m_configObjects: {}
