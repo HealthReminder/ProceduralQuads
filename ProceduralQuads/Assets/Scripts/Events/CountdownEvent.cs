@@ -5,11 +5,13 @@ using UnityEngine.Events;
 
 public class CountdownEvent : MonoBehaviour
 {
+    public bool IsReady { set => _isReady = value; }
+    [SerializeField]private bool _isReady = true; 
     public float startingTime = 0.0f;
     public float maxTime = 0.0f;
     private float _currentTime = 0.0f;
-    private bool _hasTriggered = false;
-    public UnityEvent[] Events;
+    [SerializeField] private bool _hasTriggered = false;
+    public UnityEvent[] Events; 
     private void Start()
     {
         _currentTime = startingTime;
@@ -22,9 +24,11 @@ public class CountdownEvent : MonoBehaviour
     }
     private void Update()
     {
-        _currentTime -= Time.deltaTime;
+        if (!_isReady)
+            return;
         if (!_hasTriggered)
         {
+            _currentTime -= Time.deltaTime;
             if (_currentTime <= 0)
             {
                 _hasTriggered = true;

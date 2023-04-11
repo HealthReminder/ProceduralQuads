@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1c6aadec1bab4be4aa34cbb4b160983c, type: 2}
+  - {fileID: 2100000, guid: 27ece785081d5a94199badd343d69763, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -126,10 +126,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0231f5ff202450d4089226a193cd215f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 650463952853288566}
-  playerCamera: {fileID: 650463952297772562}
-  ball: {fileID: 543151234}
-  line: {fileID: 1608551317}
+  _canAim: 1
+  _playerTransform: {fileID: 650463952853288566}
+  _playerCamera: {fileID: 650463952297772562}
+  _ball: {fileID: 543151234}
+  _line: {fileID: 1608551317}
 --- !u!1 &1608551317
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,9 +655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e16f1416de8dd647920214f6494d015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProceduralObjectGenerator: {fileID: 5095031301446841823}
-  FourPointsController: {fileID: 4574622149712919869}
-  meshPreview: {fileID: 2722513483810348912}
+  _canPlacePoints: 0
+  _proceduralObjectGenerator: {fileID: 5095031301446841823}
+  _fourPointsController: {fileID: 4574622149712919869}
+  _meshPreview: {fileID: 2722513483810348912}
 --- !u!114 &650463952853288562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,6 +671,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfc8b52d2f457b4aa5d60e7c580aa36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _canJump: 1
+  _canLook: 1
+  _canMove: 1
   playerCam: {fileID: 650463952297772588}
   orientation: {fileID: 2911686165052560060}
   moveSpeed: 25000
@@ -681,7 +686,6 @@ MonoBehaviour:
   maxSlopeAngle: 35
   slideForce: 400
   slideCounterMovement: 0.2
-  CanJump: 1
   jumpForce: 250
 --- !u!114 &4574622149712919869
 MonoBehaviour:
@@ -716,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914f070c7e93e354fbd3a256a7fc5212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  propBlockMaterial: {fileID: 2100000, guid: 99829e96b0ec20c4fb9885563fe1f824, type: 2}
+  propBlockMaterial: {fileID: 2100000, guid: 3c1b432eaa5cedd41963756be790b25c, type: 2}
   QuadPrefab: {fileID: 523264772295835423}
   PossibleColorGradient:
     serializedVersion: 2
@@ -931,7 +935,7 @@ Transform:
   m_GameObject: {fileID: 650463953297193311}
   m_LocalRotation: {x: -0, y: -0.6770569, z: -0, w: -0.7359307}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.22464003, y: 0.22464, z: 0.22464003}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 650463952853288566}
   m_RootOrder: 0
@@ -963,7 +967,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4b4cdcbd7b777714dbeb54404ca4a87f, type: 2}
+  - {fileID: 2100000, guid: 27ece785081d5a94199badd343d69763, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
