@@ -791,7 +791,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 663c9caf539b5954791b363f437e5c9c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b11a61e6654f3ea428df1cb8b72eed42, type: 2}
+      objectReference: {fileID: 2100000, guid: 8bf387046262a8d40ae471fd794025fa, type: 2}
     - target: {fileID: 919132149155446097, guid: 663c9caf539b5954791b363f437e5c9c, type: 3}
       propertyPath: m_Name
       value: Tunnel
@@ -5413,8 +5413,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa9417eeb6097e48b1fc8edfa6fb18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isReady: 1
   startingTime: 0
   maxTime: 2
+  _hasTriggered: 0
   Events:
   - m_PersistentCalls:
       m_Calls:
@@ -6272,7 +6274,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b11a61e6654f3ea428df1cb8b72eed42, type: 2}
+  - {fileID: 2100000, guid: 8bf387046262a8d40ae471fd794025fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7269,7 +7271,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b11a61e6654f3ea428df1cb8b72eed42, type: 2}
+  - {fileID: 2100000, guid: 8bf387046262a8d40ae471fd794025fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7915,7 +7917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532dcf51fe8278a47a24f1a98ee6c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: ThirdAct
+  _sceneName: SecondActB
 --- !u!65 &1402829407
 BoxCollider:
   m_ObjectHideFlags: 0
