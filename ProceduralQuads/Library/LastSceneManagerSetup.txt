@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SecondActB.unity
+- path: Assets/Scenes/ThirdAct.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
