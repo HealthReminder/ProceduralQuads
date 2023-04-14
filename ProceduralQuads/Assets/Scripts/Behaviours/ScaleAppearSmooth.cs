@@ -5,7 +5,6 @@ using UnityEngine;
 public class ScaleAppearSmooth : MonoBehaviour
 {
     public bool IsStartInvisible = true;
-    public bool IsInverse { get; set; }
     public bool IsChanging { get; set; }
      private Vector3 _targetScale = Vector3.one; // Multiplies the animation curve
     [SerializeField] private AnimationCurve _scaleCurve; // Curve dictates the scale variation
@@ -25,8 +24,6 @@ public class ScaleAppearSmooth : MonoBehaviour
 
         // Advance in animation curve
         float t = Time.deltaTime * _speed;
-        if (IsInverse)
-            t *= -1;
 
         progress += Time.deltaTime * _speed;
         Mathf.Clamp01(progress);

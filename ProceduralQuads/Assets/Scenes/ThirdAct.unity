@@ -274,7 +274,7 @@ Transform:
   m_GameObject: {fileID: 134147393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.55, z: -0}
-  m_LocalScale: {x: 3.2757785, y: 3.2757783, z: 3.2757785}
+  m_LocalScale: {x: 4.64014, y: 4.64014, z: 4.64014}
   m_Children: []
   m_Father: {fileID: 247197960}
   m_RootOrder: 3
@@ -2118,7 +2118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b107838d823095046aa09439b3fe8220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsStartInvisible: 1
+  IsStartInvisible: 0
   _scaleCurve:
     serializedVersion: 2
     m_Curve:

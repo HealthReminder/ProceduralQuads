@@ -70,7 +70,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Height: 0.27
+    - _Height: 0.07
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -80,13 +80,13 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Strength: 0
+    - _Strength: 0.28
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _CloudColor: {r: 0.35294116, g: 0.96380115, b: 1, a: 1}
+    - _CloudColor: {r: 0.35294116, g: 0.95817286, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 1, g: 0, b: 0.09560871, a: 1}
-    - _TColor: {r: 1, g: 0.062745094, b: 0.6817332, a: 1}
+    - _RimColor: {r: 1, g: 0.98137236, b: 0, a: 1}
+    - _TColor: {r: 0, g: 1, b: 0.13782525, a: 1}
   m_BuildTextureStacks: []
