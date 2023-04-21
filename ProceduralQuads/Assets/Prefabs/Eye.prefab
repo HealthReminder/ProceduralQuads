@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 6847453679121354081}
   - component: {fileID: 6847453679121354080}
   - component: {fileID: 6847453679121354083}
+  - component: {fileID: 1433315869407881102}
   m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
@@ -318,7 +319,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsStartInvisible: 1
-  _targetScale: {x: 15, y: 15, z: 15}
   _scaleCurve:
     serializedVersion: 2
     m_Curve:
@@ -391,3 +391,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1433315869407881102}
+        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1433315869407881102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6847453679121354090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e06400eaa381a4f9013f884f1b9ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _setName: Opera
+  _volumeMultiplier: 1
+  _pitchDefault: 0.9
+  _pitchRange: 0.05

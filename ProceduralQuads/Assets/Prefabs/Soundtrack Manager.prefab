@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4299746411557695188}
   - component: {fileID: 4299746411557695192}
   - component: {fileID: 4299746411557695189}
-  - component: {fileID: 4299746411557695190}
   m_Layer: 0
   m_Name: Soundtrack Manager
   m_TagString: Untagged
@@ -54,6 +53,8 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 2b57630d726ec7d4e850025c0e4462de, type: 3}
   - Name: SecondLevel
     Clip: {fileID: 8300000, guid: aa03360816e5e984e8e99341d1edc74c, type: 3}
+  - Name: ThirdLevel
+    Clip: {fileID: 8300000, guid: c8658c3b7bec7f541995059bb17cc453, type: 3}
 --- !u!82 &4299746411557695192
 AudioSource:
   m_ObjectHideFlags: 0
@@ -246,18 +247,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4299746411557695190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4299746411557695193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d68daeb6c88add49ab3fd3283ebe05c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _soundtrackName: FirstLevel
-  _fadeInSpeed: 0.5
-  _fadeOutSpeed: 0.5
