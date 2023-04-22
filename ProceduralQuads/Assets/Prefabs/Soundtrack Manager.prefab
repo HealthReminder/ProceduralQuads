@@ -50,11 +50,11 @@ MonoBehaviour:
   _audioSourceB: {fileID: 4299746411557695189}
   _availableSoundtracks:
   - Name: FirstLevel
-    Clip: {fileID: 8300000, guid: 2b57630d726ec7d4e850025c0e4462de, type: 3}
+    Clip: {fileID: 8300000, guid: 4cb88c09ddc47a44f9d9c10883220c25, type: 3}
   - Name: SecondLevel
-    Clip: {fileID: 8300000, guid: aa03360816e5e984e8e99341d1edc74c, type: 3}
+    Clip: {fileID: 8300000, guid: 7019d65918d97fb45a114ba38789e560, type: 3}
   - Name: ThirdLevel
-    Clip: {fileID: 8300000, guid: c8658c3b7bec7f541995059bb17cc453, type: 3}
+    Clip: {fileID: 8300000, guid: 6745a462734ba6942aefabd027e0f0fe, type: 3}
 --- !u!82 &4299746411557695192
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68,7 +68,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.5
+  m_Pitch: 0.9
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -164,7 +164,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.5
+  m_Pitch: 0.9
   Loop: 1
   Mute: 0
   Spatialize: 0

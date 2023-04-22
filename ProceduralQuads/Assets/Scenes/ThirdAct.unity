@@ -1238,7 +1238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &279871769
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3902,7 +3902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundtrackName: ThirdLevel
   _fadeInSpeed: 1
-  _fadeOutSpeed: 1
+  _fadeOutSpeed: 0.3
 --- !u!4 &937434272
 Transform:
   m_ObjectHideFlags: 0

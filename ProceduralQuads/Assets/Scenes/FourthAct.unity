@@ -1733,7 +1733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de3165bffcc6404fbd58aac90935120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isReady: 1
+  _isReady: 0
   _timedEvents:
   - DelayBefore: 4
     Events:

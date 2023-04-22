@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e06400eaa381a4f9013f884f1b9ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _setName: Opera
-  _volumeMultiplier: 1
-  _pitchDefault: 0.9
+  _setName: Eye
+  _volumeMultiplier: 2
+  _pitchDefault: 1
   _pitchRange: 0.05

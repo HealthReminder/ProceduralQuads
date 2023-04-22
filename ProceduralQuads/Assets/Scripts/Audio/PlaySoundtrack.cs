@@ -9,6 +9,6 @@ public class PlaySoundtrack : MonoBehaviour
     [SerializeField] private float _fadeOutSpeed = 1.0f;
     public void Play()
     {
-        FindObjectOfType<SoundtrackManager>().PlaySoundtrack(_soundtrackName, _fadeInSpeed, _fadeOutSpeed);
+        FindObjectOfType<SoundtrackManager>().PlaySoundtrack(_soundtrackName, _fadeOutSpeed, _fadeInSpeed );
     }
 }
