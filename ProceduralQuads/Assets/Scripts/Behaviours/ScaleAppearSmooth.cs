@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ScaleAppearSmooth : MonoBehaviour
 {
@@ -9,6 +8,8 @@ public class ScaleAppearSmooth : MonoBehaviour
      private Vector3 _targetScale = Vector3.one; // Multiplies the animation curve
     [SerializeField] private AnimationCurve _scaleCurve; // Curve dictates the scale variation
     [SerializeField] private float _speed; // Movement progress, where it is in the movement
+    [SerializeField] private UnityEvent OnFinishAppearing;
+
     float progress = 0; // Movement progress, where it is in the movement
     private void Start()
     {
@@ -31,5 +32,11 @@ public class ScaleAppearSmooth : MonoBehaviour
 
         // Change scale accordingly
         transform.localScale = _targetScale * t;
+
+        if (t == 1)
+        {
+            IsChanging = false;
+            OnFinishAppearing.Invoke();
+        }
     }
 }

@@ -613,6 +613,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &86860400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,6 +793,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.9
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &117398016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6847453679121354085, guid: d3540cd28b06ea746ba21d2866e24074, type: 3}
@@ -1027,6 +1033,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &138016361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,6 +1530,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &198714150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1745,6 +1757,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &268962653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,7 +2033,22 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 0.8
+  _speed: 0.95
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!135 &277000244
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2161,6 +2191,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.5
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &321761334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,6 +2990,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &364443510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3078,6 +3114,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &393013626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3684,6 +3723,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &464262560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4118,6 +4160,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &508280738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4327,6 +4372,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &527678575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5072,6 +5120,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &698767347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5438,6 +5489,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.8
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!135 &766828541
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5514,6 +5568,7 @@ GameObject:
   - component: {fileID: 770270025}
   - component: {fileID: 770270029}
   - component: {fileID: 770270030}
+  - component: {fileID: 770270031}
   m_Layer: 0
   m_Name: Platform 2
   m_TagString: Untagged
@@ -5656,6 +5711,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.75
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &770270030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5699,6 +5757,22 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+--- !u!114 &770270031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770270024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e06400eaa381a4f9013f884f1b9ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _setName: GenericPiano
+  _volumeMultiplier: 1
+  _pitchDefault: 1
+  _pitchRange: 0.05
 --- !u!1001 &774440977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5853,7 +5927,22 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 0.8
+  _speed: 0.95
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!135 &775490466
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6672,6 +6761,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &833884923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6933,6 +7025,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.85
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &863290909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7433,6 +7528,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &883441360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7635,6 +7733,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.8
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!135 &973880495
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8256,6 +8357,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.75
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1146616098 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 543151234, guid: 2c32ff8f7d7f6d44499c853dc643e641, type: 3}
@@ -8615,6 +8719,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1184437882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8891,6 +8998,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.5
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1201804462
 GameObject:
   m_ObjectHideFlags: 0
@@ -8947,6 +9057,18 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 770270031}
+          m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+          m_MethodName: PlaySound
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -9257,6 +9379,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.75
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1214324622
 Transform:
   m_ObjectHideFlags: 0
@@ -9567,7 +9692,22 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 0.8
+  _speed: 0.95
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!135 &1282512605
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9805,6 +9945,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.85
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1302441888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10404,6 +10547,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.8
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!135 &1423804105
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11205,6 +11351,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1589611796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12154,6 +12303,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1789548650
 GameObject:
   m_ObjectHideFlags: 0
@@ -12382,6 +12534,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1803405046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12705,6 +12860,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1826685291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13598,6 +13756,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.85
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1959504343
 GameObject:
   m_ObjectHideFlags: 0
@@ -13672,6 +13833,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.75
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1962970146
 GameObject:
   m_ObjectHideFlags: 0
@@ -14344,7 +14508,22 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 0.8
+  _speed: 0.95
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!135 &2058406355
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14608,6 +14787,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.8
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!135 &2096918444
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14785,6 +14967,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2106164249
 GameObject:
   m_ObjectHideFlags: 0
@@ -15179,11 +15364,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
       propertyPath: _availableSets.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
       propertyPath: _availableSets.Array.data[1].Name
       value: Eye
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Name
+      value: GenericPiano
       objectReference: {fileID: 0}
     - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
       propertyPath: _availableSets.Array.data[0].Sounds.Array.size
@@ -15192,6 +15381,10 @@ PrefabInstance:
     - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
       propertyPath: _availableSets.Array.data[1].Sounds.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.size
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
       propertyPath: _availableSets.Array.data[0].Sounds.Array.data[0]
@@ -15237,6 +15430,46 @@ PrefabInstance:
       propertyPath: _availableSets.Array.data[1].Sounds.Array.data[9]
       value: 
       objectReference: {fileID: 8300000, guid: bf0cb2a86b589d5418690eaa0645f84a, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bdb1639871b4284580dcb885a98088a, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: fa0748b3d8a99724da2588eb9363985f, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9714aeff7b094954d9b6d95bccc9fe51, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2420dbb4faa331945afe65cbc0b7d8bb, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: b84b1bab14ee7b94293d73a852c99fdc, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 92a046cfeb1720b4f8fdaa38df8680d5, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 46911d6e3aed43c4597152aee6c4661d, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2600b898c655df141b60b8afb5914153, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0cc3efdf3fe4ec24e9b116e12400ae75, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 19afa7ddae118db4ba16eb7af0a525ab, type: 3}
     - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
       propertyPath: _availableSets.Array.data[1].Sounds.Array.data[10]
       value: 
@@ -15341,6 +15574,22 @@ PrefabInstance:
       propertyPath: _availableSets.Array.data[1].Sounds.Array.data[35]
       value: 
       objectReference: {fileID: 8300000, guid: 20f10f678753f5c4084cf0d9443ddb6b, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: 722f4ded4cd5a4046b34c227b61dd8f2, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4811a22459aa431419fe335bbe84c9f0, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 93247f4a060be384980ede3154e6180a, type: 3}
+    - target: {fileID: 4628572788075036521, guid: 3baeccd46a278e947abf16438198157f, type: 3}
+      propertyPath: _availableSets.Array.data[2].Sounds.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: f6faed497ef4f2545b966cd4e06eed8b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3baeccd46a278e947abf16438198157f, type: 3}
 --- !u!23 &5070209055425645233
@@ -15507,6 +15756,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 1
+  OnFinishAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &6847453678233068301
 PrefabInstance:
   m_ObjectHideFlags: 0

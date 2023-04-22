@@ -3015,9 +3015,9 @@ MonoBehaviour:
     Events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1741962975}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
+        - m_Target: {fileID: 1741962977}
+          m_TargetAssemblyTypeName: AudioSourceFade, Assembly-CSharp
+          m_MethodName: FadeIn
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3867,6 +3867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1741962976}
+  - component: {fileID: 1741962977}
   - component: {fileID: 1741962975}
   m_Layer: 0
   m_Name: Lucy Voice
@@ -3985,6 +3986,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741962977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741962974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d7a2eaeebcc9914998499932eb727f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _source: {fileID: 1741962975}
+  _targetVolume: 1
+  _speed: 5
 --- !u!1 &1803405042
 GameObject:
   m_ObjectHideFlags: 0
