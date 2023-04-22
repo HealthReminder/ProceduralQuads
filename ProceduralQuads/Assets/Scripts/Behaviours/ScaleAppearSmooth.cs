@@ -8,7 +8,7 @@ public class ScaleAppearSmooth : MonoBehaviour
      private Vector3 _targetScale = Vector3.one; // Multiplies the animation curve
     [SerializeField] private AnimationCurve _scaleCurve; // Curve dictates the scale variation
     [SerializeField] private float _speed; // Movement progress, where it is in the movement
-    [SerializeField] private UnityEvent OnFinishAppearing;
+    [SerializeField] private UnityEvent OnStartAppearing;
 
     float progress = 0; // Movement progress, where it is in the movement
     private void Start()
@@ -22,7 +22,9 @@ public class ScaleAppearSmooth : MonoBehaviour
     {
         if (!IsChanging)
             return;
-
+        if(progress == 0)
+            OnStartAppearing.Invoke();
+        
         // Advance in animation curve
         float t = Time.deltaTime * _speed;
 
@@ -36,7 +38,6 @@ public class ScaleAppearSmooth : MonoBehaviour
         if (t == 1)
         {
             IsChanging = false;
-            OnFinishAppearing.Invoke();
         }
     }
 }
