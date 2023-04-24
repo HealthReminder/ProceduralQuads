@@ -49,10 +49,33 @@ MonoBehaviour:
   _availableSets:
   - Name: Moan
     Sounds:
-    - {fileID: 8300000, guid: ce3883115f48ee847a88305ea0ba5725, type: 3}
     - {fileID: 8300000, guid: 1a060cb67f2f0ba43bb08126b7801907, type: 3}
-    - {fileID: 8300000, guid: 5bbc8d141c1d78a4b972d0cee89ab1e8, type: 3}
-    - {fileID: 8300000, guid: ab23f4f12506d334191872c9c96489cf, type: 3}
+  - Name: Eye
+    Sounds:
+    - {fileID: 8300000, guid: 0d23233a044792b4ba035449aad9a12b, type: 3}
+  - Name: GenericPiano
+    Sounds:
+    - {fileID: 8300000, guid: 8bdb1639871b4284580dcb885a98088a, type: 3}
+    - {fileID: 8300000, guid: fa0748b3d8a99724da2588eb9363985f, type: 3}
+    - {fileID: 8300000, guid: 9714aeff7b094954d9b6d95bccc9fe51, type: 3}
+    - {fileID: 8300000, guid: 2420dbb4faa331945afe65cbc0b7d8bb, type: 3}
+    - {fileID: 8300000, guid: b84b1bab14ee7b94293d73a852c99fdc, type: 3}
+    - {fileID: 8300000, guid: 92a046cfeb1720b4f8fdaa38df8680d5, type: 3}
+    - {fileID: 8300000, guid: 46911d6e3aed43c4597152aee6c4661d, type: 3}
+    - {fileID: 8300000, guid: 2600b898c655df141b60b8afb5914153, type: 3}
+    - {fileID: 8300000, guid: 0cc3efdf3fe4ec24e9b116e12400ae75, type: 3}
+    - {fileID: 8300000, guid: 19afa7ddae118db4ba16eb7af0a525ab, type: 3}
+    - {fileID: 8300000, guid: 722f4ded4cd5a4046b34c227b61dd8f2, type: 3}
+    - {fileID: 8300000, guid: 4811a22459aa431419fe335bbe84c9f0, type: 3}
+    - {fileID: 8300000, guid: 93247f4a060be384980ede3154e6180a, type: 3}
+    - {fileID: 8300000, guid: f6faed497ef4f2545b966cd4e06eed8b, type: 3}
+  - Name: PointInPlace
+    Sounds:
+    - {fileID: 8300000, guid: 62b4c9e10081ac344a110decb1a79937, type: 3}
+    - {fileID: 8300000, guid: d1d60af34af7fca4ab766754757622a6, type: 3}
+    - {fileID: 8300000, guid: 5b2086f4abbbdf648b3bf383bbaab7b2, type: 3}
+    - {fileID: 8300000, guid: 09b5b6b4bbab0e0449e574f473d0d6ea, type: 3}
+    - {fileID: 8300000, guid: 6a93f9ed54170a448b675fd65df0975f, type: 3}
 --- !u!1 &4472607810981508787
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,7 +93,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2953023531869214286
 Transform:
   m_ObjectHideFlags: 0
@@ -96,7 +119,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -106,7 +129,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 50
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -141,7 +164,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -155,8 +178,8 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0
+      time: 0.045305252
+      value: 0.66666794
       inSlope: 0
       outSlope: 0
       tangentMode: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class ProcPlaneManager : MonoBehaviour
@@ -12,6 +13,10 @@ public class ProcPlaneManager : MonoBehaviour
     [SerializeField] private FourPointsController _fourPointsController;
     [SerializeField] private RectangleDrawer _meshPreview;
     private Vector3[] _currentPlane;
+    [Header("Sound Events")]
+    [SerializeField] private UnityEvent _OnPlacePointEvent;
+    [SerializeField] private UnityEvent _OnPreviewEvent;
+    [SerializeField] private UnityEvent _OnPlaceMeshEvent;
     void Update()
     {
         //Rse
@@ -31,6 +36,13 @@ public class ProcPlaneManager : MonoBehaviour
                     {
                         _currentPlane = _fourPointsController.GetPoints();
                         _meshPreview.Draw(_currentPlane);
+                        _OnPreviewEvent.Invoke();
+
+                    }
+                    else
+                    {
+                        _OnPlacePointEvent.Invoke();
+
                     }
                 }  //If there is a plane, generate it
                 else if (_currentPlane != null)
@@ -38,6 +50,8 @@ public class ProcPlaneManager : MonoBehaviour
                     _proceduralObjectGenerator.Generate(_fourPointsController.GetPoints());
                     _fourPointsController.ResetPoints();
                     _currentPlane = null;
+                    _OnPlaceMeshEvent.Invoke();
+
                 }
             }
             else if (Input.GetMouseButtonDown(1))

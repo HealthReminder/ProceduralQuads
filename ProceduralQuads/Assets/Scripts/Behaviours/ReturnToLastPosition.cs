@@ -18,7 +18,6 @@ public class ReturnToLastPosition : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.up * -1, out hit, 1.5f))
             {
-                print("Found an object - distance: " + hit.distance);
                 if (hit.transform)
                 {
                     if(hit.transform != transform)
