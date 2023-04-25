@@ -152,6 +152,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3885360946888979178, guid: 863a84db7d3833449bf64ea551d39d79, type: 3}
+--- !u!114 &6614401618883708925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5973499425478644817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a86deb665b6e34bb57380774562fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _setName: Impact_Pumpkin
+  _volumeMultiplier: 1
+  _pitchDefault: 1
+  _pitchRange: 0
 --- !u!114 &7482115884672639652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,9 +180,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8679e7a87a3e349ac3b6a5d3f66ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinimumImpactMagnitude: 0.5
+  MinimumImpactMagnitude: 0.25
   Events:
-  - m_PersistentCalls:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6706551140398046432}
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
@@ -180,5 +196,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  Vector3Events: []
-  RigidbodyEvents: []
+  ImpactEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6614401618883708925}
+        m_TargetAssemblyTypeName: PlayAudioOnPosition, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

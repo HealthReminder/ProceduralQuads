@@ -1362,6 +1362,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.85
+  OnStartAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &717459404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,6 +1429,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.8
+  OnStartAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &717459409
 Transform:
   m_ObjectHideFlags: 0
@@ -1876,6 +1882,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.85
+  OnStartAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &909245407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2382,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _speed: 0.85
+  OnStartAppearing:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1155592835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2796,6 +2808,15 @@ MonoBehaviour:
   _proceduralObjectGenerator: {fileID: 1814263040}
   _fourPointsController: {fileID: 1814263041}
   _meshPreview: {fileID: 163085707}
+  _OnPlacePointEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _OnPreviewEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _OnPlaceMeshEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1814263044
 Rigidbody:
   m_ObjectHideFlags: 0

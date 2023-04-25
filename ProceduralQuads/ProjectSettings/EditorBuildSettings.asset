@@ -5,34 +5,40 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test/level1.unity
     guid: 5f93e617d7736604a8bdcae5f312e875
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test/Level2.unity
     guid: 8351493e38a727c4aaa12566c52f5f5b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test/level3.unity
     guid: 8fde857d2a06fd54e896c154ffb55e15
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/UITests.unity
+    guid: 10fc691bf831b3b49b8755e073f5d865
+  - enabled: 0
+    path: Assets/Scenes/IntroEye.unity
+    guid: ac32893af5612ea40ad1df7f94f065c3
   - enabled: 1
-    path: Assets/Scenes/SpireScene.unity
-    guid: cc48d41c6db294444befbd2fe5a4e389
+    path: Assets/Scenes/FirstAct.unity
+    guid: 5d21439383db3a949ac5619806701175
   - enabled: 1
     path: Assets/Scenes/SecondAct.unity
     guid: 1db20e9fb9f3c3045843c81802694768
   - enabled: 1
-    path: Assets/Scenes/IntroEye.unity
-    guid: ac32893af5612ea40ad1df7f94f065c3
-  - enabled: 1
     path: Assets/Scenes/ThirdAct.unity
     guid: f289f1a7096dea547a6b2ab8c735572e
   - enabled: 1
-    path: Assets/Scenes/SecondActB.unity
-    guid: 874845c30e610304a8fc259980b53a5d
-  - enabled: 1
     path: Assets/Scenes/FourthAct.unity
     guid: 34db8683e8e320440a95b895266eb2f3
+  - enabled: 0
+    path: Assets/Scenes/SecondActB.unity
+    guid: 874845c30e610304a8fc259980b53a5d
   m_configObjects: {}

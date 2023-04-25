@@ -76,6 +76,9 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 5b2086f4abbbdf648b3bf383bbaab7b2, type: 3}
     - {fileID: 8300000, guid: 09b5b6b4bbab0e0449e574f473d0d6ea, type: 3}
     - {fileID: 8300000, guid: 6a93f9ed54170a448b675fd65df0975f, type: 3}
+  - Name: Impact_Pumpkin
+    Sounds:
+    - {fileID: 8300000, guid: 6fc310f210078ed4889d24946395b97f, type: 3}
 --- !u!1 &4472607810981508787
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +120,7 @@ AudioSource:
   m_GameObject: {fileID: 4472607810981508787}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5240912378162432161, guid: cdcca52e6a7a7874f81fbe290c89e6c3, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

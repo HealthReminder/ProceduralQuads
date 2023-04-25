@@ -5,9 +5,8 @@ using UnityEngine.Events;
 public class OnTriggerExitEvent : MonoBehaviour
 {
     public string TriggerTag;
-    public List<UnityEvent> RegularEvents;
-    public List<VectorEvent> VectorEvents;
-    public List<RigidbodyEvent> RigidbodyEvents;
+    public UnityEvent RegularEvents;
+    public ImpactEvent ImpactEvents;
 
     void OnTriggerExit(Collider other)
     {
@@ -24,19 +23,8 @@ public class OnTriggerExitEvent : MonoBehaviour
     }
     private void InvokeAll(Collider col)
     {
-        foreach (UnityEvent ev in RegularEvents)
-        {
-            ev.Invoke();
-        }
-        foreach (VectorEvent ev in VectorEvents)
-        {
-            ev.Invoke(col.ClosestPoint(transform.position));
-        }
-        foreach (RigidbodyEvent ev in RigidbodyEvents)
-        {
-            if(col.GetComponent<Rigidbody>())
-                ev.Invoke(col.GetComponent<Rigidbody>());
-        }
+        RegularEvents.Invoke();
+        ImpactEvents.Invoke((1,col.ClosestPoint(transform.position)));
     }
 
 }

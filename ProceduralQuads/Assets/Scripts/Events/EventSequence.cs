@@ -7,7 +7,8 @@ public class EventSequence : MonoBehaviour
 {
 
     public bool IsReady { set => _isReady = value; }
-    [SerializeField] private bool _isReady = true;   // If true initiate the event cascade
+    [SerializeField] private bool _isReady = true;   // If true ini
+    [SerializeField] private bool _hasTriggered = false;   // If true initiate the event cascade
     [System.Serializable]   public struct TimedEvent
     {
         public float DelayBefore;
@@ -17,13 +18,14 @@ public class EventSequence : MonoBehaviour
     [SerializeField] private TimedEvent[] _timedEvents;
     private void Update()
     {
-        if (_isReady)
+        if (_isReady && !_hasTriggered)
         {
             _isReady = false;
-            StartCoroutine(Wait());
+            _hasTriggered = true;
+            StartCoroutine(SequenceRoutine());
         }
     }
-    IEnumerator Wait()
+    IEnumerator SequenceRoutine()
     {
         for (int i = 0; i < _timedEvents.Length; i++)
         {
