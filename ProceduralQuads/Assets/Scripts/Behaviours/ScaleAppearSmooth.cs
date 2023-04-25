@@ -40,4 +40,5 @@ public class ScaleAppearSmooth : MonoBehaviour
             IsChanging = false;
         }
     }
+
 }

@@ -286,18 +286,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4299746411557695188, guid: 8d287fd663ea04442b1f874c7e65cf87, type: 3}
-      propertyPath: _availableSoundtracks.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299746411557695188, guid: 8d287fd663ea04442b1f874c7e65cf87, type: 3}
-      propertyPath: _availableSoundtracks.Array.data[3].Clip
-      value: 
-      objectReference: {fileID: 8300000, guid: b01902551030db645b9eb5527738f728, type: 3}
-    - target: {fileID: 4299746411557695188, guid: 8d287fd663ea04442b1f874c7e65cf87, type: 3}
-      propertyPath: _availableSoundtracks.Array.data[3].Name
-      value: Ending
-      objectReference: {fileID: 0}
     - target: {fileID: 4299746411557695191, guid: 8d287fd663ea04442b1f874c7e65cf87, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -348,6 +336,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d287fd663ea04442b1f874c7e65cf87, type: 3}
+--- !u!114 &37838260 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4299746411557695188, guid: 8d287fd663ea04442b1f874c7e65cf87, type: 3}
+  m_PrefabInstance: {fileID: 37838259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e65132816cf894fb23b1278619d5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &123720217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1801,7 +1800,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: acf997b5a2fa122409cc12249b7552fb, type: 2}
+  - {fileID: 2100000, guid: 56779afa9f271474e89da736ff74646f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3939,17 +3938,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1715018414164451705, guid: f0d72ad1e7df91d44b61387833397874, type: 3}
   m_PrefabInstance: {fileID: 815133188}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &847230106 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 847230106, guid: 2c32ff8f7d7f6d44499c853dc643e641, type: 3}
-  m_PrefabInstance: {fileID: 1716181348}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b107838d823095046aa09439b3fe8220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &937434270
 GameObject:
   m_ObjectHideFlags: 0
@@ -5791,7 +5779,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: acf997b5a2fa122409cc12249b7552fb, type: 2}
+  - {fileID: 2100000, guid: 56779afa9f271474e89da736ff74646f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6015,7 +6003,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: acf997b5a2fa122409cc12249b7552fb, type: 2}
+  - {fileID: 2100000, guid: 56779afa9f271474e89da736ff74646f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6813,11 +6801,6 @@ MonoBehaviour:
   - DelayBefore: 5
     Events:
       m_PersistentCalls:
-        m_Calls: []
-    DelayAfter: 0
-  - DelayBefore: 0
-    Events:
-      m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 647047292}
           m_TargetAssemblyTypeName: ScaleAppearSmooth, Assembly-CSharp
@@ -6884,18 +6867,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1886590610}
-          m_TargetAssemblyTypeName: SountrackHandler, Assembly-CSharp
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
     DelayAfter: 3
   - DelayBefore: 0
     Events:
@@ -6913,25 +6884,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-    DelayAfter: 1
-  - DelayBefore: 1
-    Events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 847230106}
-          m_TargetAssemblyTypeName: ScaleChangeSmooth, Assembly-CSharp
-          m_MethodName: set_IsChanging
-          m_Mode: 6
+        - m_Target: {fileID: 37838260}
+          m_TargetAssemblyTypeName: SoundtrackManager, Assembly-CSharp
+          m_MethodName: StopSoundtrack
+          m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0
+            m_FloatArgument: 1
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
     DelayAfter: 1
-  - DelayBefore: 1
+  - DelayBefore: 0
     Events:
       m_PersistentCalls:
         m_Calls:
@@ -6975,52 +6941,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: FourthAct
---- !u!1 &1886590609
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1886590611}
-  - component: {fileID: 1886590610}
-  m_Layer: 0
-  m_Name: Ending Soundtrack
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1886590610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886590609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d68daeb6c88add49ab3fd3283ebe05c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _soundtrackName: Ending
-  _fadeInSpeed: 10
-  _fadeOutSpeed: 0.3
---- !u!4 &1886590611
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886590609}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.445307, y: 0.8784621, z: -7.3841476}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912597262
 GameObject:
   m_ObjectHideFlags: 0

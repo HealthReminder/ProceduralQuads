@@ -79,6 +79,9 @@ MonoBehaviour:
   - Name: Impact_Pumpkin
     Sounds:
     - {fileID: 8300000, guid: 6fc310f210078ed4889d24946395b97f, type: 3}
+  - Name: Angel_Appear
+    Sounds:
+    - {fileID: 8300000, guid: 6fc310f210078ed4889d24946395b97f, type: 3}
 --- !u!1 &4472607810981508787
 GameObject:
   m_ObjectHideFlags: 0
