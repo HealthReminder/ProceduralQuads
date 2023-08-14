@@ -27,8 +27,7 @@ public class FourPointsController : MonoBehaviour
         
             if (PointCount < 4)
             {
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out RaycastHit hit, maxDistance))
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit, maxDistance))
                 {
                     Vector3 point = hit.point;
                     points[PointCount] = point;

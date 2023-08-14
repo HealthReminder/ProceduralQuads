@@ -32,7 +32,7 @@ public class BlinkingImage : MonoBehaviour
             elapsedTime = 0f;
             while (elapsedTime < blinkDuration)
             {
-                float alpha = Mathf.Lerp(1f, 0f, elapsedTime / blinkDuration);
+                float alpha = Mathf.Lerp(1f, 0f, Mathf.Clamp01(elapsedTime / blinkDuration));
                 image.color = new Color(0f, 0f, 0f, alpha);
                 elapsedTime += Time.deltaTime;
                 yield return null;

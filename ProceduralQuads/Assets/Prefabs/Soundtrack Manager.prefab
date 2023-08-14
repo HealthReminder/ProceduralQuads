@@ -57,6 +57,8 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 6745a462734ba6942aefabd027e0f0fe, type: 3}
   - Name: FourthLevel
     Clip: {fileID: 8300000, guid: b01902551030db645b9eb5527738f728, type: 3}
+  - Name: Ending
+    Clip: {fileID: 8300000, guid: 4cb88c09ddc47a44f9d9c10883220c25, type: 3}
 --- !u!82 &4299746411557695192
 AudioSource:
   m_ObjectHideFlags: 0

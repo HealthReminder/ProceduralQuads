@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ScreenFade : MonoBehaviour
 {
     public float fadeDuration = 2f; // The duration of the fade in seconds
-
+    public bool isFadeAtStart = true;
     private Image fadeImage; // The UI image used for fading
 
     private void Start()
@@ -14,10 +14,11 @@ public class ScreenFade : MonoBehaviour
         fadeImage = GetComponentInChildren<Image>();
 
         // Set the image color to white
-        fadeImage.color = Color.black;
+        //fadeImage.color = Color.black;
 
         // Start fading the image in
-        FadeIn();
+        if(isFadeAtStart)
+            FadeIn();
     }
 
     public void FadeIn()

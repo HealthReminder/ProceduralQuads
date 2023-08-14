@@ -23,6 +23,7 @@ public class OnTriggerEnterEvent : MonoBehaviour
     }
     private void InvokeAll(Collider col)
     {
+        Debug.Log("Trigger triggered");
         RegularEvents.Invoke();
         if (isOnlyTriggeredOnce == true)
             Destroy(gameObject);

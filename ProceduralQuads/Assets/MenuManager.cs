@@ -31,6 +31,11 @@ public class MenuManager : MonoBehaviour
         }
 
     }
+    public void UnlockMouse()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     public void ToggleMenu()
     {
         _menuObject.SetActive(!_menuObject.activeSelf);

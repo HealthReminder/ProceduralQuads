@@ -19,6 +19,8 @@ public class ProcPlaneManager : MonoBehaviour
     [SerializeField] private UnityEvent _OnPlaceMeshEvent;
     void Update()
     {
+        // Lock the cursor to the center of the screen
+        Cursor.lockState = CursorLockMode.Locked; 
         //Rse
         if (Input.GetKeyDown(KeyCode.R))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

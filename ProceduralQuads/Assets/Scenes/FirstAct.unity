@@ -2059,7 +2059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 650463952853288461, guid: 2c32ff8f7d7f6d44499c853dc643e641, type: 3}
       propertyPath: m_CollisionDetection
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 650463952853288562, guid: 2c32ff8f7d7f6d44499c853dc643e641, type: 3}
       propertyPath: CanJump
@@ -3346,8 +3346,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isReady: 0
   _hasTriggered: 0
+  _timeMultiplier: 1
+  _isTriggerNextEvent: 0
   _timedEvents:
-  - DelayBefore: 2.5
+  - Name: 
+    DelayBefore: 2.5
     Events:
       m_PersistentCalls:
         m_Calls:
@@ -3364,7 +3367,8 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
     DelayAfter: 0
-  - DelayBefore: 1
+  - Name: 
+    DelayBefore: 1
     Events:
       m_PersistentCalls:
         m_Calls:
@@ -3381,7 +3385,8 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
     DelayAfter: 1
-  - DelayBefore: 0
+  - Name: 
+    DelayBefore: 0
     Events:
       m_PersistentCalls:
         m_Calls:
@@ -3398,7 +3403,8 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
     DelayAfter: 5
-  - DelayBefore: 0
+  - Name: 
+    DelayBefore: 0
     Events:
       m_PersistentCalls:
         m_Calls:
@@ -3451,7 +3457,8 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
     DelayAfter: 3
-  - DelayBefore: 0
+  - Name: 
+    DelayBefore: 0
     Events:
       m_PersistentCalls:
         m_Calls:
@@ -3480,7 +3487,8 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     DelayAfter: 4
-  - DelayBefore: 0
+  - Name: 
+    DelayBefore: 0
     Events:
       m_PersistentCalls:
         m_Calls:
@@ -3560,7 +3568,19 @@ MonoBehaviour:
   isOnlyTriggeredOnce: 0
   RegularEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1210669182}
+        m_TargetAssemblyTypeName: MoveToTransform, Assembly-CSharp
+        m_MethodName: MoveTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 787330829}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1210669182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4275,7 +4295,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 7.414152
+  MinDistance: 13.850378
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -4359,7 +4379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741962974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.008895561, z: -3.53}
+  m_LocalPosition: {x: 0.01, y: 0.008895561, z: -18.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

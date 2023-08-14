@@ -1076,6 +1076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 2
+  isFadeAtStart: 1
 --- !u!114 &7013247241946671714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,7 +1593,7 @@ GameObject:
   - component: {fileID: 650463953297193283}
   - component: {fileID: 650463953297193282}
   - component: {fileID: 650463953297193309}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: PointPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1902,7 +1903,7 @@ GameObject:
   - component: {fileID: 2618544146803487108}
   - component: {fileID: 4411979129626405662}
   - component: {fileID: 1879308276083952764}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: CornerPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
