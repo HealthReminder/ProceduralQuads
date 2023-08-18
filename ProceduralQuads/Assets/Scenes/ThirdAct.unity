@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6467797}
-  - component: {fileID: 6467798}
   - component: {fileID: 6467799}
   - component: {fileID: 6467800}
   m_Layer: 0
@@ -163,77 +162,6 @@ Transform:
   m_Father: {fileID: 1912597263}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6467798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6467796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b107838d823095046aa09439b3fe8220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsStartInvisible: 1
-  _scaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.06791666
-      outSlope: 0.06791666
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 0.7273263
-      value: 1.0439665
-      inSlope: 4.7438774
-      outSlope: 4.7438774
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.25993317
-    - serializedVersion: 3
-      time: 0.8497933
-      value: 0.99241734
-      inSlope: -2.5670862
-      outSlope: -2.5670862
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.5887133
-      outWeight: 0.31589755
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -0.4756096
-      outSlope: -0.4756096
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.17083335
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _speed: 0.8
-  OnStartAppearing:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6467800}
-        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &6467799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +179,7 @@ MonoBehaviour:
   _onLooking:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6467798}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScaleAppearSmooth, Assembly-CSharp
         m_MethodName: set_IsChanging
         m_Mode: 6
@@ -1045,7 +973,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247197960}
-  - component: {fileID: 247197962}
   - component: {fileID: 247197961}
   - component: {fileID: 247197963}
   m_Layer: 0
@@ -1090,7 +1017,7 @@ MonoBehaviour:
   _onLooking:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 247197962}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScaleAppearSmooth, Assembly-CSharp
         m_MethodName: set_IsChanging
         m_Mode: 6
@@ -1101,77 +1028,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
---- !u!114 &247197962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247197959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b107838d823095046aa09439b3fe8220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsStartInvisible: 1
-  _scaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.06791666
-      outSlope: 0.06791666
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 0.7273263
-      value: 1.0439665
-      inSlope: 4.7438774
-      outSlope: 4.7438774
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.25993317
-    - serializedVersion: 3
-      time: 0.8497933
-      value: 0.99241734
-      inSlope: -2.5670862
-      outSlope: -2.5670862
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.5887133
-      outWeight: 0.31589755
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -0.4756096
-      outSlope: -0.4756096
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.17083335
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _speed: 0.8
-  OnStartAppearing:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 247197963}
-        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &247197963
 MonoBehaviour:
@@ -3597,7 +3453,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 795067410}
-  - component: {fileID: 795067412}
   - component: {fileID: 795067411}
   - component: {fileID: 795067413}
   m_Layer: 5
@@ -3642,7 +3497,7 @@ MonoBehaviour:
   _onLooking:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 795067412}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScaleAppearSmooth, Assembly-CSharp
         m_MethodName: set_IsChanging
         m_Mode: 6
@@ -3653,77 +3508,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
---- !u!114 &795067412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795067409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b107838d823095046aa09439b3fe8220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsStartInvisible: 1
-  _scaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.06791666
-      outSlope: 0.06791666
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 0.7273263
-      value: 1.0439665
-      inSlope: 4.7438774
-      outSlope: 4.7438774
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.25993317
-    - serializedVersion: 3
-      time: 0.8497933
-      value: 0.99241734
-      inSlope: -2.5670862
-      outSlope: -2.5670862
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.5887133
-      outWeight: 0.31589755
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -0.4756096
-      outSlope: -0.4756096
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.17083335
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _speed: 0.8
-  OnStartAppearing:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 795067413}
-        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &795067413
 MonoBehaviour:
@@ -4979,7 +4763,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1202457508}
   - component: {fileID: 1202457511}
-  - component: {fileID: 1202457510}
   - component: {fileID: 1202457509}
   m_Layer: 5
   m_Name: Island 6
@@ -5027,77 +4810,6 @@ MonoBehaviour:
   _volumeMultiplier: 1
   _pitchDefault: 1
   _pitchRange: 0
---- !u!114 &1202457510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202457507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b107838d823095046aa09439b3fe8220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsStartInvisible: 1
-  _scaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.06791666
-      outSlope: 0.06791666
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 0.7273263
-      value: 1.0439665
-      inSlope: 4.7438774
-      outSlope: 4.7438774
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.25993317
-    - serializedVersion: 3
-      time: 0.8497933
-      value: 0.99241734
-      inSlope: -2.5670862
-      outSlope: -2.5670862
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.5887133
-      outWeight: 0.31589755
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -0.4756096
-      outSlope: -0.4756096
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.17083335
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _speed: 0.8
-  OnStartAppearing:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1202457509}
-        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1202457511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5115,7 +4827,7 @@ MonoBehaviour:
   _onLooking:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1202457510}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScaleAppearSmooth, Assembly-CSharp
         m_MethodName: set_IsChanging
         m_Mode: 6
@@ -7489,7 +7201,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2077069372}
-  - component: {fileID: 2077069374}
   - component: {fileID: 2077069373}
   - component: {fileID: 2077069375}
   m_Layer: 0
@@ -7539,7 +7250,7 @@ MonoBehaviour:
   _onLooking:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2077069374}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScaleAppearSmooth, Assembly-CSharp
         m_MethodName: set_IsChanging
         m_Mode: 6
@@ -7550,77 +7261,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
---- !u!114 &2077069374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077069371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b107838d823095046aa09439b3fe8220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsStartInvisible: 1
-  _scaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.06791666
-      outSlope: 0.06791666
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 0.7273263
-      value: 1.0439665
-      inSlope: 4.7438774
-      outSlope: 4.7438774
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.25993317
-    - serializedVersion: 3
-      time: 0.8497933
-      value: 0.99241734
-      inSlope: -2.5670862
-      outSlope: -2.5670862
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.5887133
-      outWeight: 0.31589755
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -0.4756096
-      outSlope: -0.4756096
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.17083335
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _speed: 0.8
-  OnStartAppearing:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2077069375}
-        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2077069375
 MonoBehaviour:
